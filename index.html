@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <!-- title -->    
+    <title>Calculator</title>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muhammad Pola Jwammer">
+
+    <!-- style links -->
+    <link rel="stylesheet" href="style/main.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!--=============
+         navbar 
+    =================-->
+    <nav>
+        <li><a href="index.html">Calculator</a></li>
+        <li><a href="unit.html">Uint Converter</a></li>
+    </nav>
+
+    <!-- =================
+        claculator section
+    ======================-->
+    <div class="calculator">
+        <form name="calc">
+            <input type="text" name="txt" class="txt" readonly>
+            <span onclick="document.calc.txt.value  = ''" class="cls">C</span>
+            <span onclick="document.calc.txt.value += '%'">%</span>
+            <span onclick="document.calc.txt.value += '/'">/</span>
+            <span onclick="document.calc.txt.value += '**'">^</span>
+            <span onclick="document.calc.txt.value += '7'">7</span>
+            <span onclick="document.calc.txt.value += '8'">8</span>
+            <span onclick="document.calc.txt.value += '9'">9</span>
+            <span onclick="document.calc.txt.value += '*'">*</span>
+            <span onclick="document.calc.txt.value += '4'">4</span>
+            <span onclick="document.calc.txt.value += '5'">5</span>
+            <span onclick="document.calc.txt.value += '6'">6</span>
+            <span onclick="document.calc.txt.value += '-'">-</span>
+            <span onclick="document.calc.txt.value += '3'">3</span>
+            <span onclick="document.calc.txt.value += '2'">2</span>
+            <span onclick="document.calc.txt.value += '1'">1</span>
+            <span onclick="document.calc.txt.value += '+'">+</span>
+            <span onclick="document.calc.txt.value += '-'"><small> +/-</small></span>
+            <span onclick="document.calc.txt.value += '.'">.</span>
+            <span onclick="document.calc.txt.value += '0'">0</span>
+            <span onclick="document.calc.txt.value = eval(calc.txt.value)" class="equal"> = </span>
+        </form>
+    </div>
+
+    <!--==============
+        footer
+    ==================-->
+    <footer>
+        <div class="icon">
+            <span>FOLLOW ME</span>
+            <a href="https://github.com/MuhammadPola"><i class="fab fa-github-square"></i></a>
+            <a href="https://twitter.com/MuhammadPola4"><i class="fab fa-twitter-square" style="color:#1DA1F2;"></i></a>
+            <a href="https://stackoverflow.com/users/11246618/muhammad-pola-jwammer"><i class="fab fa-stack-overflow" style="color:orange;"></i></a>
+        </div>
+        <div class="name">
+            <h2>&#169 Muhammad Jwammer</h2>
+        </div>
+    </footer>
+</body>
+</html>

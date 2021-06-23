@@ -1,0 +1,222 @@
+<html lang="en">
+
+<head>
+    <!-- title -->
+    <title>Unit Converter</title>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style links -->
+    <link rel="stylesheet" href="style/main.css">
+    <!-- icons-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <li><a href="index.html">Calculator</a></li>
+        <li><a href="unit.html">Uint Converter</a></li>
+    </nav>
+
+    <!-- all units -->
+    <div class="unit-converter">
+
+
+        <!--=============
+            weight card 
+        =================-->
+        <div class="card">
+            <!--  card header-->
+            <div class="card-header">
+                <h2>Weight Converter</h2>
+            </div>
+            <!-- card body -->
+            <div class="card-body">
+                <!-- pound unit -->
+                <div>
+                    <label>Pounds</label>
+                    <input id="inputPounds" type="number" placeholder="Pounds"
+                        oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+                </div>
+                <!-- gram unit -->
+                <div>
+                    <label>Grams</label>
+                    <input id="inputGrams" type="number" placeholder="Grams"
+                        oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+                </div>
+                <!-- kilogram unit -->
+                <div>
+                    <label>Kilograms</label>
+                    <input id="inputKilograms" type="number" placeholder="Kilograms"
+                        oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+                </div>
+                <!-- ounces unit -->
+                <div>
+                    <label>Ounces</label>
+                    <input id="inputOunces" type="number" placeholder="Ounces"
+                        oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+                </div>
+                <!-- stones unit -->
+                <div>
+                    <label>Stones</label>
+                    <input id="inputStones" type="number" placeholder="Stoned"
+                        oninput="weightConverter(this.id,this.value)" onchange="weightConverter(this.id,this.value)">
+                </div>
+            </div>
+        </div>
+
+
+        <!--====================
+            Temperature card 
+        =======================-->
+        <div class="card">
+            <!--  card header-->
+            <div class="card-header">
+                <h2>Temperature Converter</h2>
+            </div>
+            <!-- card body -->
+            <div class="card-body">
+                <!-- Fahrenheit unit -->
+                <div>
+                    <label>Fahrenheit</label>
+                    <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                        oninput="TemperatureConverter(this.id,this.value)"
+                        onchange="TemperatureConverter(this.id,this.value)">
+                </div>
+                <!-- Celsius unit -->
+                <div>
+                    <label>Celsius</label>
+                    <input id="inputCelsius" type="number" placeholder="Celsius"
+                        oninput="TemperatureConverter(this.id,this.value)"
+                        onchange="TemperatureConverter(this.id,this.value)">
+                </div>
+                <!-- Kelvin unit -->
+                <div>
+                    <label>Kelvin</label>
+                    <input id="inputKelvin" type="number" placeholder="Kelvin"
+                        oninput="TemperatureConverter(this.id,this.value)"
+                        onchange="TemperatureConverter(this.id,this.value)">
+                </div>
+            </div>
+        </div>
+
+
+        <!--====================
+            Length card 
+        =======================-->
+        <div class="card">
+            <!--  card header-->
+            <div class="card-header">
+                <h2>Length Converter</h2>
+            </div>
+            <!-- card body -->
+            <div class="card-body">
+                <!-- Feet unit -->
+                <div>
+                    <label>Feet</label>
+                    <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.id,this.value)"
+                        onchange="LengthConverter(this.id,this.value)">
+                </div>
+                <!-- Yards unit -->
+                <div>
+                    <label>Yards</label>
+                    <input id="inputYards" type="number" placeholder="Yards"
+                        oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.id,this.value)">
+                </div>
+                <!-- Meters unit -->
+                <div>
+                    <label>Meters</label>
+                    <input id="inputMeters" type="number" placeholder="Meters"
+                        oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.id,this.value)">
+                </div>
+                <!-- cm unit -->
+                <div>
+                    <label>cm</label>
+                    <input id="inputCM" type="number" placeholder="cm" oninput="LengthConverter(this.id,this.value)"
+                        onchange="LengthConverter(this.id,this.value)">
+                </div>
+                <!-- Kilometers unit -->
+                <div>
+                    <label>Kilometers</label>
+                    <input id="inputKilometers" type="number" placeholder="Kilometers"
+                        oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.id,this.value)">
+                </div>
+                <!-- Miles unit -->
+                <div>
+                    <label>Miles</label>
+                    <input id="inputMiles" type="number" placeholder="Miles"
+                        oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.id,this.value)">
+                </div>
+                <!-- Inches unit -->
+                <div>
+                    <label>Inches</label>
+                    <input id="inputInches" type="number" placeholder="Inches"
+                        oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.id,this.value)">
+                </div>
+            </div>
+        </div>
+
+
+        <!--====================
+            Speed card 
+        =======================-->
+        <div class="card">
+            <!--  card header-->
+            <div class="card-header">
+                <h2>Speed Converter</h2>
+            </div>
+            <!-- card body -->
+            <div class="card-body">
+                <!-- MPH unit -->
+                <div>
+                    <label>MPH</label>
+                    <input id="inputMPH" type="number" placeholder="MPH" oninput="SpeedConverter(this.id,this.value)"
+                        onchange="SpeedConverter(this.id,this.value)">
+                </div>
+                <!-- KPH unit -->
+                <div>
+                    <label>KPH</label>
+                    <input id="inputKPH" type="number" placeholder="KPH" oninput="SpeedConverter(this.id,this.value)"
+                        onchange="SpeedConverter(this.id,this.value)">
+                </div>
+                <!-- Knots unit -->
+                <div>
+                    <label>Knots</label>
+                    <input id="inputKnots" type="number" placeholder="Knots"
+                        oninput="SpeedConverter(this.id,this.value)" onchange="SpeedConverter(this.id,this.value)">
+                </div>
+                <!-- Mach -->
+                <div>
+                    <label>Mach</label>
+                    <input id="inputMach" type="number" placeholder="Mach" oninput="SpeedConverter(this.id,this.value)"
+                        onchange="SpeedConverter(this.id,this.value)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--==============
+        footer
+    ==================-->
+    <footer>
+        <div class="icon">
+            <span>FOLLOW ME</span>
+            <a href="https://github.com/MuhammadPola"><i class="fab fa-github-square"></i></a>
+            <a href="https://twitter.com/MuhammadPola4"><i class="fab fa-twitter-square" style="color:#1DA1F2;"></i></a>
+            <a href="https://stackoverflow.com/users/11246618/muhammad-pola-jwammer"><i class="fab fa-stack-overflow" style="color:orange;"></i></a>
+        </div>
+        <div class="name">
+            <h2>&#169 Muhammad Jwammer</h2>
+        </div>
+    </footer>
+
+    <!-- java script file -->
+    <script src="function.js"></script>
+</body>
+
+</html>

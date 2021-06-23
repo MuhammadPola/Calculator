@@ -1,0 +1,56 @@
+// ============= claculator style =============
+.calculator {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    border-radius: 10px;
+
+    form {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 30px;
+        border-radius: 50px;
+        background: #4d4d4d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        .txt {
+            grid-column: 1/ 5;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            font-size: x-large;
+            font-weight: bolder;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+
+        }
+
+        span {
+            color: #ffffff;
+            display: grid;
+            place-items: center;
+            width: 50px;
+            height: 50px;
+            font-size: x-large;
+            font-weight: bolder;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .equal,
+        .cls {
+            background-color: #ffffff;
+            color: $primary;
+            font-size: xx-large;
+        }
+
+        .cls {
+            background-color: #5C898B;
+            color: #ffffff;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+$primary :#CC6F5A;$primary: #5C898B;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+// ======== calculator style ============
+@import './calculator';
+
+// ======== unit converter style style ============
+@import './unit';
+
+
+ // ========= navbar style ==============
+nav {
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            
+
+    li{
+        border-left: thick solid $primary;
+        padding: 20px;
+         
+        a{
+            font-size: xx-large;
+            color: $primary;
+            font-weight: bolder;
+        }
+
+        &:hover{
+            background-color: $primary;
+            border-left: thick solid black;
+
+            a{
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+//============== footer style ====================
+footer{
+    padding: 30px;
+
+    .name{
+        float: left;
+        border-top: black 3px solid;
+        margin-bottom: 0%;
+    }
+
+    .icon{
+
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            color: $primary;
+            font-size: x-large;
+            font-weight: bolder;
+            border-right: $primary 3px solid;
+            padding: 5px;
+        }
+        
+        i{
+            font-size: xx-large;
+            padding: 5px;
+            cursor: pointer;
+            color: black;
+        }
+    }
+}
+
+//  ========== make the website responsive =============
+@media only screen and (max-width: 650px){
+
+    //navbar
+    nav{
+        li{
+            padding: 10px;
+            a{
+                font-size: x-large;
+            }
+        }
+    }
+
+    // footer
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .name{
+            margin-top: 25px;
+        }
+    }
+}
+@media only screen and (max-width: 450px){
+    nav{
+        li{
+            padding: 5px;
+            a{
+                font-size: larger;
+            }
+        }
+    }
+}
